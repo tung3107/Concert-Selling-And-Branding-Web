@@ -149,9 +149,11 @@ html{
 .section-heading::selection {
     background-color: brown;
 }
-#content #solar-about>img, #content #moonbyul-about>img, #content #wheein-about>img, #content #hwasa-about>img{
+.pic-fix {
+    display: inline-block;
+}
+#content #solar-about img, #content #moonbyul-about img, #content #wheein-about img, #content #hwasa-about img{
     max-width: 200px;
-    margin: 25px 0;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -161,6 +163,9 @@ html{
 #content p.member-name{
     text-align: center;
     font-size: 28px;
+}
+#content .angel {
+    margin: 25px 0 25px 70px;
 }
 #content .solar-peak {
     width: 50%;
@@ -177,7 +182,6 @@ html{
 }
 #content .moon-pic{
     float:right;
-    width: 50%;
     margin: 25px 70px 25px 0 !important;
 
 }
@@ -196,7 +200,6 @@ html{
 }
 #content .hwasa-pic{
     float:right;
-    width: 50%;
     margin: 25px 70px 25px 0 !important;
 }
 #content .video2{
@@ -555,10 +558,9 @@ h4.detail {
     .video-best {
         text-align: center;
     }
-    #content #solar-about>img,#content #wheein-about>img {
-        margin: 25px 70px 25px 0 !important;
-        float: right;
-
+    .pic {
+        display: flex;
+        justify-content: center;
     }
     .logo-band a h2 {
         letter-spacing: 0px;
@@ -578,7 +580,12 @@ h4.detail {
        display: inline-block;
     }
     #content .moon-pic, #content .hwasa-pic {
-        width: 100%;
+        max-width: 100%;
+        margin: 25px 0 !important;
+        float: none;
+    }
+    #content .angel {
+        margin: 25px 0;
     }
 }
 
