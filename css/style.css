@@ -167,40 +167,22 @@ html{
 #content .angel {
     margin: 25px 0 25px 70px;
 }
-#content .solar-peak {
+#content .solar-peak, #content .wheein-peak{
     width: 50%;
     float:right;
-    margin: 30px 70px 15px 0;
+    margin: 30px 0 0 0;
     line-height: 2;
     text-align: justify;
 }
-#content .moonbyul-peak{
-    margin: 30px 70px 15px 0 !important;
+#content .moonbyul-peak, #content .hwasa-peak{
+    margin: 30px 70px 15px 0 ;
     line-height: 2;
     text-align: justify;
     width:50%;
 }
-#content .moon-pic{
+#content .moon-pic, #content .hwasa-pic{
     float:right;
-    margin: 25px 70px 25px 0 !important;
-
-}
-#content .wheein-peak{
-    width: 50%;
-    float:right;
-    margin: 30px 70px 15px 0;
-    line-height: 2;
-    text-align: justify;
-}
-#content .hwasa-peak{
-    margin: 30px 70px 15px 0 !important;
-    line-height: 2;
-    text-align: justify;
-    width:50%;
-}
-#content .hwasa-pic{
-    float:right;
-    margin: 25px 70px 25px 0 !important;
+    margin: 25px 70px 25px 0;
 }
 #content .video2{
     margin: 0 0 0 40px;
@@ -265,10 +247,12 @@ html{
 .tour-leg{
     margin-left: -8px;
     margin-right: -8px;
+    overflow: hidden;
 }
 #content .tour-show {
     display: inline-block;
     padding:0 9px;
+    margin-top: 16px;
 }
 #content .tour-show img {
     width: 239px;
@@ -306,6 +290,7 @@ html{
     outline: none;
     border: none;
     cursor: pointer;
+    -webkit-appearance:none;
 }
 .tour-details button:hover{
     background-color: #ccc;
@@ -447,6 +432,9 @@ h4.detail {
 .mt-8 {
     margin-top: 8px;
 }
+.mt-16 {
+    margin-top: 16px;
+}
 .col {
     float: left;
     padding-left: 8px;
@@ -497,18 +485,27 @@ h4.detail {
 .btnsend {
     display:flex;
     justify-content: flex-end;
+    -webkit-appearance:none;
 }
 .contact-message button:hover {
     background-color: #ccc;
     color: black;
 }
+.contact-form a {
+    color: #1915f0;
+    opacity: 0.9;
+}
+.contact-form a:hover {
+    opacity: 1;
+}
 .footer-img img {
     width:100%;
     padding: 32px 0 0;
 }
+
 #footer .icon-social a{
     color: rgba(0, 0, 0, 0.8);
-    font-size: 24px;
+    font-size: 40px;
 }
 #footer .icon-social a:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -542,6 +539,18 @@ h4.detail {
     }
     #content .moonbyul-peak, #content .hwasa-peak {
         margin: 30px 30px 0 !important;
+    }
+    .tour-details button {
+        padding: 16px 16px;
+    }
+    .contact-message .form-control {
+        padding: 15px;
+    }
+    .i-full-col {
+        width: 100%;
+    }
+    .contact-message button {
+        padding: 15px 15px;
     }
 }
 @media (max-width: 739px) {
@@ -581,12 +590,32 @@ h4.detail {
     }
     #content .moon-pic, #content .hwasa-pic {
         max-width: 100%;
-        margin: 25px 0 !important;
+        margin: 25px 0;
         float: none;
     }
     #content .angel {
         margin: 25px 0;
     }
+    #content .tour-show img {
+        width: 100%;
+    }
+    .s-col-full, .s-full-width {
+        width: 100%;
+    }
+    .contact-message {
+        margin-top: 32px;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    .icon-social {
+        display: flex;
+        justify-content: space-around;
+    }
+    #footer .icon-social a {
+        font-size: 40px;
+    }
+   
 }
 
 
