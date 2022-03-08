@@ -291,6 +291,7 @@ html{
     border: none;
     cursor: pointer;
     -webkit-appearance:none;
+    font-size: 16px;
 }
 .tour-details button:hover{
     background-color: #ccc;
@@ -481,6 +482,7 @@ h4.detail {
     border:none;
     margin-top:8px;
     cursor: pointer;
+    font-size: 16px;
 }
 .btnsend {
     display:flex;
